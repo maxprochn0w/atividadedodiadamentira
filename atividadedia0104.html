@@ -1,0 +1,62 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIa da menira</title>
+</head>
+<body>
+
+    <!-- Início do formulário -->
+    <form action="/processar_formulario" method="POST">
+        <!-- O atributo 'action' especifica para onde os dados do formulário serão enviados -->
+        <!-- O atributo 'method' especifica o método HTTP usado para enviar os dados (POST neste caso) -->
+
+        <!-- O elemento <form> é usado como um "container" que envolve os diferentes elementos de entrada (inputs) e botões que compõem o formulário. Ele marca onde começa e termina o formulário-->
+
+        <!--O método POST especificado no atributo method do elemento <form> indica que os dados do formulário serão enviados ao servidor usando o método HTTP POST.-->
+        <h2>Formulário de Contato</h2>
+
+        <!-- Campo de entrada de texto para o nome -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <!-- O atributo 'required' torna este campo obrigatório -->
+
+        <br>
+
+        <!-- Campo de entrada de email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <!-- O tipo 'email' valida automaticamente se o valor inserido é um endereço de email válido -->
+
+        <br>
+
+        <!-- Campo de seleção de gênero -->
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select>
+
+        <br>
+
+        <!-- Campo de texto para mensagem -->
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+
+        <br>
+
+        <!-- Botão de envio do formulário -->
+        <button type="submit">Enviar</button>
+        <!--Esses inputs permitem o usuario inserir diferentes tipos de dados-->
+        <!-- Este botão envia os dados do formulário quando clicado -->
+        <!--type="text": Para entrada de texto curto.-->
+        <!--type="email": Para entrada de endereço de e-mail, com validação automática.--> 
+        <!--type="select": Para criar um menu suspenso com opções selecionáveis.-->
+        <!--type="textarea": Para entrada de texto longo.-->
+        <!--type="submit": Para criar um botão que envia o formulário.-->
+    </form>
+    <!-- Fim do formulário -->
+
+</body>
+</html>
